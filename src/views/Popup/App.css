@@ -1,0 +1,19 @@
+
+body {
+  border: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-width: 270px;
+  width: 270px;
+  height: 270px;
+  overflow: hidden;
+}
+
+.App {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+.App-view {
+  margin: 1em;
+}
