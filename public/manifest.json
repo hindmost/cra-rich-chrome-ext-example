@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "Keyword Marker",
+  "description": "A rich extension example: Marks specific keywords on specific (StackExchange) sites",
+  "version": "0.1",
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "scripts": ["static/js/background.js"],
+    "persistent": false
+  },
+  "content_scripts": [{
+    "js": [ "static/js/content.js" ],
+    "matches": [
+      "https://stackoverflow.com/*", "https://*.stackoverflow.com/*",
+      "https://*.stackexchange.com/*"
+    ]
+  }],
+  "icons": {
+    "16": "icon-filled-16.png",
+    "32": "icon-filled-32.png",
+    "64": "icon-filled-64.png",
+    "128": "icon-filled-128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "icon-outlined-16.png",
+      "32": "icon-outlined-32.png"
+    },
+    "default_title": "Keyword Marker",
+    "default_popup": "popup.html"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}
