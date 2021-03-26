@@ -9,7 +9,7 @@
     "react-redux": "^7.2.0",
     "react-scripts": "3.4.1",
     "redux": "^4.0.5",
-    "reduxed-chrome-storage": "^1.0.12",
+    "reduxed-chrome-storage": "^2.0.0",
     "semantic-ui-react": "^0.88.2",
     "semantic-ui-css": "^2.4.1"
   },
